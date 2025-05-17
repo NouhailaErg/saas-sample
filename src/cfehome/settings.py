@@ -34,12 +34,12 @@ ADMIN_USER_EMAIL=config("ADMIN_USER_EMAIL", default=None)
 MANAGERS=[]
 ADMINS=[]
 if all([ADMIN_USER_NAME, ADMIN_USER_EMAIL]):
-    ADMIN +=[
+    ADMINS +=[
         (f'{ADMIN_USER_NAME}', f'{ADMIN_USER_EMAIL}')
     ]
     MANAGERS=ADMINS
 
-    
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
